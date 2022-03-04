@@ -342,6 +342,8 @@ CSS DE ÁREAS ESPECÍFICAS
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #000;
+    padding: 30px;
 }
 
 .section-team-area .sliders-pointers {
@@ -361,4 +363,368 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 .section-team-area .sliders-pointers .active {
     background-color: #b28756;
+}
+.section-team--avatar {
+    width: 100px;
+    height: auto;
+}
+.section-team--name {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.section-team--role {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+.section-team--social {
+    display: flex;
+    margin-top: 20px;
+}
+.section-team--social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-color: #ccc;
+    border-radius: 13px;
+}
+.section-team--social a:last-child {
+    margin-right: 0px;
+}
+.section-team--social a:hover {
+    background-color: #b28756;
+}
+
+/* ==================== INÍCIO DA ÁREA PROPOSTA COMO EXERCÍCIO ==================== */
+
+.section-happy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-happy--avatar {
+    width: 100px;
+    height: auto;
+}
+.section-happy--name {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.section-happy--role {
+    font-size: 14px;
+    color: #000;
+    margin-top: 5px;
+}
+.section-happy--quotes {
+    margin-top: 30px;
+}
+.section-happy--spech {
+    max-width: 800px;
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+
+}
+
+.section-happy .sliders-pointers {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.section-happy .pointer {
+    width: 15px;
+    height: 15px;
+    border: solid 2px #b28756;
+    border-radius: 8px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.section-happy .sliders-pointers .active {
+    background-color: #b28756;
+}
+
+
+
+.default.white {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+}
+.section-companies {
+    display: flex;
+}
+.section-company {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.section-prices {
+    display: flex;
+    width: 100%;
+}
+.section-price {
+    width: 270px; /* para igualar as caixas price o boniaky fez flex 1. Se algo der errado, fazer igual ele */
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #fff;
+}
+.section-price:last-child {
+    margin-right: 0px;
+}
+.section-price--service {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.section-price--value {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.section-price--month {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 13px;
+}
+.section-price--item {
+    font-size: 12px;
+}
+.section-price .button {
+    background-color: #333;
+}
+.section-price:last-child .button {
+    background-color: #b28756;
+}
+
+
+
+.default.light.white {
+    background-color: #fff;
+    box-shadow: none;
+}
+.default.light.white .section-body {
+    max-width: initial;
+    margin: auto;
+}
+.section-premium {
+    overflow: hidden;
+}
+
+
+.section-premium .sliders { /* elemento com o conjunto de slides */
+    width: 1000vw; 
+    height: 100%;
+}
+.section-premium .slide { /*elemento contendo apenas o slide */
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+}
+.section-premium .slidearea { /* elemento serve para centralizar a informação dentro de cada slide */
+    height: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 40px;
+    margin: auto;
+    
+}
+
+.section-premium--left,
+.section-premium--right {
+    flex: 1;
+}
+.section-premium--left {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 30px;
+    width: 300px;
+}
+.section-premium--right {
+    
+}
+.section-premium--item {
+    display: flex;
+    margin-bottom: 20px;
+}
+.section-premium--item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.section-premium--item h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+}
+.section-premium--item div {
+    font-size: 13px;
+    color: #999;
+    line-height: 20px
+}
+
+.section-premium .sliders-pointers {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.section-premium .pointer {
+    width: 15px;
+    height: 15px;
+    border: solid 2px #b28756;
+    border-radius: 8px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.section-premium .sliders-pointers .active {
+    background-color: #b28756;
+}
+
+
+
+.section-facts {
+    display: flex;
+}
+.section-fact {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+.section-fact--number {
+    font-size: 45px;
+    color: #b28756;
+}
+.section-fact--line {
+    width: 20px;
+    border-bottom: 2px solid #b28756;
+    margin: auto;
+}
+.section-fact--fact {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.section-fact--desc {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+
+.default.white {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+    padding: 30px 0px;
+}
+.section-medias,
+.section-medias--left,
+.section-medias--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.section-medias--left {
+    margin-right: 40px;
+}
+.section-medias--left img {
+    margin-right: 10px;
+}
+.section-medias--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.section-medias--icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.tt {
+    background-color: #34c5f0;
+}
+.ld {
+    background-color: #127cb4;
+}
+.fb {
+    background-color: #336297;
+}
+.gp {
+    background-color: #e74237;
+}
+.pt {
+    background-color: #b71c29;
+}
+
+
+
+.section-contact {
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+}
+.section-contact form {
+    display: flex;
+    flex-direction: column;
+}
+.section-contact--split {
+    display: flex;
+}
+.section-contact input[type=text],
+.section-contact textarea {
+    width: 100%;
+    display: block;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+    margin-top: 10px;
+}
+.section-contact--split input:first-child {
+    margin-right: 20px;
+}
+.section-contact textarea {
+    resize: none;
+    height: 100px;
+}
+
+.section-contact .button {
+    display: inline-block;
+    width: fit-content;
+    margin: 20px auto auto auto;
+    
 }
