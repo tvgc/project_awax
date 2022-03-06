@@ -38,6 +38,9 @@ header {
     display: flex;
     justify-content: flex-end;
 }
+.menu-opener {
+    display: none;
+}
 .menu ul,
 .menu li {
     list-style: none;
@@ -835,17 +838,240 @@ footer {
 
 
 
-/* ==================== RESPONSIVITE ==================== */
+/* ==================== TABLET-RESPONSIVITE ==================== */
 
 @media (min-width:450px) and (max-width:800px) {
+    .logo {
+        margin-left: 30px;
+    }
+    .menu-opener {
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
     nav {
-        /* display: none; */
+        display: none;
         z-index: 99;
         position: absolute;
         top: 100px;
         right: 0;
-        background-color: rgb(0 0 0 / 80%);
-        max-width: 70vw;
+        background-color: rgb(0 0 0 / 90%);
+        width: 70vw;
         height: calc(100vh - 100px);
-        }
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a,
+    .menu li a:hover,
+    .menu .active a  {
+        border: 0;
+    }
+    .menu li.active a {
+        color: #b28756;
+    }
+    .menu li a {
+        margin-left: 50px;
+        height: 80px;
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+
+
+    .section-aboutus {
+        flex-direction: column;
+    }
+    .section-aboutus--left {
+        margin: 0px 30px 30px 30px;
+    }
+    .section-aboutus--right {
+        width: 100%;
+    }
+
+
+
+    .section-services {
+        flex-wrap: wrap;
+    }
+    .section-service {
+        min-width: 50%;
+    }
+    .section-service:first-child {
+        border-left: 0px;
+    }
+
+
+
+    .section-team {
+        max-width: 580px;
+    }
+
+
+
+    .section-prices {
+        flex-wrap: wrap;
+    }
+    .section-price {
+        margin-left: 20px;
+        min-width: calc(50% - 40px);
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    .section-map {
+        width: 100%;
+    }
+    .section-map--right {
+        display: none;
+    }
+    .section-map--left {
+        margin: 0px 30px;
+    }
+    .section-map--item {
+        margin-bottom: 20px;
+    }
+    .section-map--item:last-child {
+        margin-bottom: 0px;
+    }
 }
+
+/* ==================== PHONE-RESPONSIVITE ==================== */
+
+@media (max-width:450px) {
+    .logo {
+        margin-left: 30px;
+    }
+    .menu-opener {
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    nav {
+        display: none;
+        z-index: 99;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: rgb(0 0 0 / 90%);
+        width: 80vw;
+        height: calc(100vh - 100px);
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a,
+    .menu li a:hover,
+    .menu .active a  {
+        border: 0;
+    }
+    .menu li.active a {
+        color: #b28756;
+    }
+    .menu li a {
+        margin-left: 30px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner h2 {
+        font-size: 17px;
+    }
+
+
+
+    .section-aboutus {
+        flex-direction: column;
+    }
+    .section-aboutus--left,
+    .section-aboutus--right {
+        margin: 0px 30px 30px 30px;
+    }
+    .section-aboutus--right {
+        width: auto;
+    }
+    .section-aboutus--right img {
+        width: 100%;
+    }
+
+
+
+
+    .section-services {
+        flex-wrap: wrap;
+        border: 0;
+    }
+    .section-service {
+        min-width: 100%;
+    }
+    .section-service:first-child {
+        border-left: 0px;
+    }
+
+
+
+    .section-projects--filters {
+        margin: 0px 30px;
+    }
+    .section-projects--photo {
+        width: 320px;
+    }
+    .section-projects--photoarea {
+        width: 300px;
+        height: 190px;
+    }
+
+
+    .section-companies {
+        flex-wrap: wrap;
+    }
+    .section-company {
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+
+
+    .section-prices {
+        flex-wrap: wrap;
+    }
+    .section-price {
+        width: 100%;
+        margin: 0px 30px 30px 30px;
+    }
+
+
+    .section-team {
+        max-width: 280px;
+    }
+    
+    .default.light.map {
+        padding: 0px;
+    }
+    .section-map {
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 250px;
+    }
+    .section-map--right {
+        display: block;
+    }
+    .section-map--left {
+        margin: 0px;        
+    }
+    .section-map--item {
+        margin-bottom: 20px;
+    }
+    .section-map--item:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+
+/*  deixar as seções que eu criei responsivos, tanto para celulares quanto apra tablets */
